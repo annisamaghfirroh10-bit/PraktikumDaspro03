@@ -21,14 +21,15 @@ public class StudiKasus2_03 {
         boolean lolosPKM = statusPendanaanPKM == 1;
 
         if (namaKegiatan.equalsIgnoreCase("BELMAWA")
-                || namaKegiatan.equalsIgnoreCase("BAKORMA")
-                || namaKegiatan.equalsIgnoreCase("Mandiri")) {
-            if (jmlDokumenUpload <= 4) { 
-                if (lolosPKM) {
-                    System.out.println("Mendapatkan dana penghargaan");
-                } else {
+                || namaKegiatan.equalsIgnoreCase("BAKORMA")) {
+            if (jmlDokumenUpload >= 4) { 
+                System.out.println("Mendapatkan dana penghargaan");
+            } else {
                     System.out.println("Tidak mendapatkan dana penghargaan");
-                }
+            }
+                } else if (namaKegiatan.equalsIgnoreCase("PKM")){
+                    if (lolosPKM) {
+                        System.out.println("Mendapatkan dana penghargaan");
                 } else {
                    System.out.println("Tidak mendapatkan dana penghargaan"); 
                 }
@@ -36,5 +37,6 @@ public class StudiKasus2_03 {
                     System.out.println("Tidak mendapatkan dana penghargaan");
                 }
             }
-            
-             }
+        }
+        
+
