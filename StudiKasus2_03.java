@@ -22,6 +22,7 @@ public class StudiKasus2_03 {
 
         if (namaKegiatan.equalsIgnoreCase("BELMAWA")
                 || namaKegiatan.equalsIgnoreCase("BAKORMA")) {
+            //cabang lomba
             if (jmlDokumenUpload >= 4) { 
                 System.out.println("Mendapatkan dana penghargaan");
             } else {
