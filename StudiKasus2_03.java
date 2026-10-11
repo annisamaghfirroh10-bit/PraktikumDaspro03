@@ -29,12 +29,14 @@ public class StudiKasus2_03 {
                     System.out.println("Tidak mendapatkan dana penghargaan");
             }
                 } else if (namaKegiatan.equalsIgnoreCase("PKM")){
+                    // cabang PKM
                     if (lolosPKM) {
                         System.out.println("Mendapatkan dana penghargaan");
                 } else {
                    System.out.println("Tidak mendapatkan dana penghargaan"); 
                 }
                 } else {
+                    // cabang Mandiri dan lainnya
                     System.out.println("Tidak mendapatkan dana penghargaan");
                 }
             }
